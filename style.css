@@ -74,6 +74,8 @@ header {
     padding: 4px 52px 0px 52px;
 }
 
+
+
 .bord-botm {
     border-bottom: 1px solid var(--neutral-white);
     opacity: 0.1;
@@ -82,7 +84,6 @@ header {
 ul {
     display: flex;
     gap: 1.5rem;
-
     color: var(--gray-colors-50);
     font-size: 18px;
     font-weight: 400;
@@ -92,6 +93,33 @@ ul {
 ul li {
     display: flex;
     cursor: pointer;
+}
+
+.responsive-menu{
+    display: none;
+    position: fixed;
+    right: 0;
+    width: 300px;
+    padding: 20px;
+    background-color:#000000a8 ;    
+
+    transition: ease-in-out 0.5s;
+}
+
+.responsive-menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    color: var(--neutral-white);
+    font-size: 24px;
+}
+
+.responsive-menu li:hover{
+    border-bottom: 1px solid var(--neutral-white);
+}
+
+.responsive-menu-btn{
+    display: none;
 }
 
 .btn-yellow {
@@ -104,7 +132,6 @@ ul li {
     font-size: 28px;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: 3px;
     text-align: center;
 
     cursor: pointer;
@@ -320,6 +347,7 @@ section {
     justify-content: center;
     width: 280px;
     height: 420px;
+    padding: 8px;
     background: linear-gradient(0deg, var(--primary-colors-cyan-400) 0%, var(--primary-colors-blue-600) 100%);
     overflow: hidden;
 
@@ -330,6 +358,10 @@ section {
     text-transform: uppercase;
 
     color: var(--gray-colors-50);
+}
+
+.card-credits img{
+    width: 100%;
 }
 
 .bonus-box {
@@ -499,4 +531,159 @@ footer {
 
 .copy-left {
     width: 60%
+}
+
+/* <<<<< responsivo >>>>> */
+
+@media screen and (max-width:1046px){
+
+
+    .card-game{
+        gap: 12px;
+    }
+
+    .card-blue{
+        height: 410px;
+        width: 300px;
+    }
+
+    .card-blue img{
+        height: 463px;
+    }
+    
+    .card-text{
+        font-size: 27px;
+        line-height: 32px;
+    }
+
+    .battle-pass-container{
+        height: 431px;
+
+    }
+
+    .pass-container{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .pass-container img{
+        height: 100px;
+    }
+    .pass-text h2{
+        font-size: 20px;
+    }
+
+    .prisioner-blob{
+        height: 327px;
+    }
+
+    .mush-head{
+        height: 500px;
+        right: 4px;
+    }
+
+    .card-credits{
+        height:360px;
+        font-size: 28px;
+    }
+
+    .bonus-box{
+        right: -14px;
+        font-size: 16px;
+    }
+
+    .card-itens{
+        width: 208px;
+        height: 380px;
+    }
+
+    .card-itens img{
+        height: 422px;
+    }
+
+    .itens-h{
+        height: 240px;
+    }
+
+    .play-container-left{
+        gap: 7px;
+    }
+
+    .play-container-left h2{
+        font-size: 32px;
+    }
+
+    .play-container-left p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:900px){
+    
+    .main-container{
+        width: 100%;
+        line-height: 24px;
+        font-size: 12px;
+        gap: 16px;
+        padding: 32px 52px 0px 52px;
+    }
+
+   .ftn-h-scale{
+    height: 100px;
+   }
+
+    .video-container{
+        display: flow-root;
+        position: inherit;
+    }
+
+    
+    .btn-yellow{
+        padding:  4px 28px;
+        font-size: 24px;
+
+    }
+
+    .card-game, .credits-container, .cards-container{
+        flex-wrap: wrap;
+    }
+
+    .pass-img-container{
+        display: none;
+    }
+
+    .pass-container{
+        width: 100%;
+    }
+
+    .card-itens, .card-blue{
+        margin-top: 50px;
+    }
+
+    
+}
+
+@media screen and (max-width:750px){
+
+    .ul-head, .btn-head{
+        display: none;
+    }
+    
+    header{
+        position: fixed;
+    }
+
+    .main-container{
+        padding-top:  100px;
+    }
+
+    .responsive-menu-btn{
+        display: block;
+    }
+
+    .responsive-menu-btn button{
+        background-color: transparent;
+        border: none;
+    }
+
 }
