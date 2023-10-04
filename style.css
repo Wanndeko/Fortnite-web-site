@@ -25,8 +25,9 @@
     --primary-colors-yellow-400: #F5E401;
 }
 
-body{
-overflow-x:hidden ;}
+body {
+    overflow-x: hidden;
+}
 
 main {
     background-image: url('./assets/bg-img/bg-galactus.png');
@@ -51,13 +52,12 @@ main::before {
     background: linear-gradient(180deg, #46cae900 0%, #000000 100%);
 }
 
-.background-opacity{
+.background-opacity {
     position: absolute;
     z-index: 10;
-    padding: 0px 52px 40px 52px;
 }
 
-.progress-bar{
+.progress-bar {
     position: absolute;
     border-bottom: 2px solid var(--primary-colors-cyan-400);
     bottom: 0;
@@ -71,6 +71,7 @@ header {
 
     width: 100%;
     height: 6rem;
+    padding: 4px 52px 0px 52px;
 }
 
 .bord-botm {
@@ -116,7 +117,7 @@ ul li {
     -webkit-text-fill-color: transparent;
 }
 
-.title-container{
+.title-container {
     width: 80%;
 }
 
@@ -127,16 +128,33 @@ ul li {
     align-items: flex-start;
     gap: 24px;
 
-    width: 50%;
-    padding-top: 100px;
+    width: 60%;
+    
+    padding: 70px 52px 52px 52px;
 
     color: var(--gray-colors-100);
+    line-height: 28px;
+    font-size: 16px;
 
 }
+
 
 .main-container span {
     display: flex;
     gap: 16px;
+}
+
+.video-container {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 16px;
+    right: 52px;
+    bottom: 40px;
+
+    font-size: 20px;
+    font-weight: 600;
 }
 
 section {
@@ -144,7 +162,7 @@ section {
     margin-top: 120px;
 }
 
-.tournament-container{
+.tournament-container {
     padding: 63px 52px 40px 52px;
 }
 
@@ -166,7 +184,7 @@ section {
     position: relative;
 }
 
-.card-blue::before{
+.card-blue::before {
     content: '';
     position: absolute;
     left: 0;
@@ -188,7 +206,7 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    top:160px;
+    top: 160px;
     left: 0;
     padding: 35px;
     color: var(--gray-colors-50);
@@ -210,7 +228,7 @@ section {
     height: 500px;
     background: radial-gradient(66.09% 66.09% at 50% 47.49%, #46CAE9 0%, #0866B0 100%);
     padding: 63px 52px 40px 52px;
-    
+
 }
 
 .pass-container {
@@ -226,7 +244,7 @@ section {
     line-height: 28px;
 }
 
-.white-box-top{
+.white-box-top {
     position: absolute;
     background: var(--neutral-white);
     height: 100px;
@@ -236,7 +254,7 @@ section {
     transform: rotate(-45deg);
 }
 
-.white-box-bottom{
+.white-box-bottom {
     position: absolute;
     background: var(--neutral-white);
     height: 100px;
@@ -248,7 +266,7 @@ section {
 
 
 
-.pass-text{
+.pass-text {
     display: flex;
     align-items: start;
     justify-content: center;
@@ -257,9 +275,9 @@ section {
 
 }
 
-.pass-text h2{
+.pass-text h2 {
     text-transform: uppercase;
-    font-size: 28px; 
+    font-size: 28px;
 }
 
 .pass-img-container {
@@ -271,11 +289,11 @@ section {
     width: 50%;
 }
 
-.prisioner-blob{
+.prisioner-blob {
     height: 350px;
 }
 
-.mush-head{
+.mush-head {
     position: absolute;
     height: 595px;
     right: 60px;
@@ -283,7 +301,7 @@ section {
 
 /* container credits */
 
-.credits-section{
+.credits-section {
     padding: 63px 52px 40px 52px;
 }
 
@@ -314,7 +332,7 @@ section {
     color: var(--gray-colors-50);
 }
 
-.bonus-box{
+.bonus-box {
     position: absolute;
     top: 0;
     right: -13px;
@@ -358,7 +376,7 @@ section {
 
 }
 
-.itens-h{
+.itens-h {
     height: 300px;
     width: 600px;
 }
@@ -375,7 +393,7 @@ section {
 .card-itens img {
     position: absolute;
     top: -42px;
-    height:  542px;
+    height: 542px;
 }
 
 .kratos-card::before {
@@ -401,10 +419,10 @@ section {
     padding: 28px;
     color: var(--gray-colors-50);
     line-height: 42px;
-    
+
 }
 
-.text-kratos h4{
+.text-kratos h4 {
     font-size: 36px;
     letter-spacing: 2px;
 }
