@@ -686,4 +686,37 @@ footer {
         border: none;
     }
 
+    .title-container{
+        height: 140px;
+        width: 300px;
+    }
+
+    .play-with-friends img{
+        
+        display: none;
+    }
+
+    .play-container-left{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ftn-h-scale{
+        height: 80px;
+    }
+    
+    .pass-container img {
+        display: none;
+    }
+
+    .epic-container, .copy-container{
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+
+ 
 }
