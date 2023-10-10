@@ -5,9 +5,9 @@
     font-family: 'Source Sans 3', sans-serif;
     max-width: 1440px;
     list-style: none;
+    text-decoration: none;
 
 }
-
 
 :root {
     --gray-colors-50: #F9FAFB;
@@ -65,6 +65,7 @@ main::before {
 }
 
 header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,6 +78,9 @@ header {
 
 
 .bord-botm {
+    position: fixed;
+    width: 100%;
+    top: 96px;
     border-bottom: 1px solid var(--neutral-white);
     opacity: 0.1;
 }
@@ -84,7 +88,6 @@ header {
 ul {
     display: flex;
     gap: 1.5rem;
-    color: var(--gray-colors-50);
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
@@ -95,11 +98,17 @@ ul li {
     cursor: pointer;
 }
 
+li a{
+    color: var(--neutral-white);
+}
+
 .responsive-menu{
+    z-index: 99;
     display: none;
     position: fixed;
+    top: 58px;
     right: 0;
-    width: 300px;
+    width: 220px;
     padding: 20px;
     background-color:#000000a8 ;    
 
@@ -157,7 +166,7 @@ ul li {
 
     width: 60%;
     
-    padding: 70px 52px 52px 52px;
+    padding: 160px 52px 52px 52px;
 
     color: var(--gray-colors-100);
     line-height: 28px;
@@ -625,7 +634,7 @@ footer {
         line-height: 24px;
         font-size: 12px;
         gap: 16px;
-        padding: 32px 52px 0px 52px;
+        padding: 112px 52px 0px 52px;
     }
 
    .ftn-h-scale{
@@ -660,7 +669,6 @@ footer {
         margin-top: 50px;
     }
 
-    
 }
 
 @media screen and (max-width:750px){
@@ -705,6 +713,14 @@ footer {
     .ftn-h-scale{
         height: 80px;
     }
+
+    .main-container{
+        padding-top:200px ;
+    }
+
+    .video-container{
+        display: none;
+    }
     
     .pass-container img {
         display: none;
@@ -717,6 +733,39 @@ footer {
         margin-bottom: 20px;
     }
 
+}
 
- 
+@media screen and (max-width: 380px) {
+
+    .main-container{
+        padding-top: 190px;
+    }
+
+    .ftn-h-scale{
+        height: 60px;
+    }
+
+    .title-container {
+        height: 120px;
+        width: 230px;
+    }
+
+    .card-blue{
+         
+            height: 393px;
+            width: 260px;
+        
+    }
+
+    .card-blue img{
+        height: 430px;
+    }
+
+    .battle-pass-container{
+        height: 396px;
+    }
+    
+    .btn-yellow{
+        font-size: 20px;
+    }
 }

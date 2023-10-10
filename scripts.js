@@ -28,8 +28,12 @@ function percentBar() {
 window.onscroll = () => {
     if (window.pageYOffset > 100) {
         headerColor.style.background = 'rgba(0, 0, 0, 0.34)'
+        headerColor.style.zIndex= '10'
+        headerColor.style.boxShadow = '1px 2px 4px 0px #000'
     } else {
         headerColor.style.background = 'none'
+        headerColor.style.zIndex = 'none'
+        headerColor.style.boxShadow = 'none'
     }
   }
 
@@ -45,11 +49,4 @@ function openMenu(){
 btnResponsive.addEventListener('click', openMenu)
 setInterval(percentBar,  timeInterval)
 setInterval(changeBackground, timeInterval);
-
-
-
-
-
-
-
 
