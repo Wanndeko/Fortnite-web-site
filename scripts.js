@@ -4,6 +4,7 @@ const thumb = document.querySelector('.thumb-img')
 const headerColor = document.querySelector('header')
 const btnResponsive = document.querySelector('.responsive-btn')
 const menuResponsive = document.querySelector('.responsive-menu')
+const btnToBottom = document.querySelector('button')
 
 const bgImages = ['bg-galactus', 'cyber-bg', 'gold-bg', 'jungle-bg', 'red-bg']
 const currentWidth = ['20%', '40%', '60%', '80%', '100%']
@@ -46,6 +47,13 @@ function openMenu(){
     }
 }
 
+
+function toEnd(){
+    window.scrollTo(0, 99999)
+}
+
+
+btnToBottom.addEventListener('click', toEnd)
 btnResponsive.addEventListener('click', openMenu)
 setInterval(percentBar,  timeInterval)
 setInterval(changeBackground, timeInterval);
