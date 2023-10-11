@@ -542,6 +542,10 @@ footer {
     width: 60%
 }
 
+.icons-contatos img{
+    height: 40px;
+}
+
 /* <<<<< responsivo >>>>> */
 
 @media screen and (max-width:1046px){
