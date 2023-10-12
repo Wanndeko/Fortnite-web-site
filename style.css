@@ -25,13 +25,14 @@
     --primary-colors-yellow-400: #F5E401;
 }
 
-body {
+.wrapper {
     overflow-x: hidden;
+    width: 100%;
 }
 
 main {
     background-image: url('./assets/bg-img/bg-galactus.png');
-    height: 100vh;
+    height: 660px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
